@@ -10,5 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "inquirer": "^6.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfisher396/readme-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jfisher396/readme-generator/issues"
+  },
+  "homepage": "https://github.com/jfisher396/readme-generator#readme"
 }
