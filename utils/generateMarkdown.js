@@ -5,15 +5,16 @@ function generateMarkdown(data) {
   
   # ${data.title}
 
-  # Description:
+  ## Description:
 
   ${data.description}
 
   ---
 
-  # Table of contents 
+  ## Table of Contents 
   *[Installation](#Installation) 
-  *[Usage](#Usage) 
+  *[Usage](#Usage)
+  *[License](#License)
   *[Contributing](#Contribution)
   *[Tests](#Tests) 
   *[Questions](#Contact-Information)
@@ -33,18 +34,24 @@ function generateMarkdown(data) {
 
 ---
 
-  # Contributing
+  ## License
+  License used for this project - ${data.license}
+    * For more information on license types, please reference this website
+  for additional licensing information - [https: //choosealicense.com/](https://choosealicense.com/).
+
+
+  ## Contributing
 
   ${data.contribution}
 
 ---
 
-  # Tests
+  ## Tests
   ${data.test}
 
 ---
 
-  # Contact Information
+  ## Contact Information
     *GitHub Username: ${data.userName}
     *GitHub Email: ${data.userEmail}
   
