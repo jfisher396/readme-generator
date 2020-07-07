@@ -11,18 +11,43 @@ function generateMarkdown(data) {
 
   ---
 
-  ## Table of contents
+  # Table of contents 
+  *[Installation](#Installation) 
+  *[Usage](#Usage) 
+  *[Contributing](#Contribution)
+  *[Tests](#Tests) 
+  *[Questions](#Contact-Information)
 
-  * [Questions](#questions)
+  
+---
 
-  I 'm baby selfies lomo unicorn, swag fingerstache fixie vice vaporware microdosing vape. Retro hashtag church-key polaroid forage plaid. Succulents disrupt yuccie, narwhal tofu tattooed fam four loko slow-carb. Try-hard keytar YOLO +1 lo-fi irony DIY subway tile next level normcore. Scenester tumeric drinking vinegar readymade cardigan pug vape activated charcoal. Poke vaporware gentrify etsy meditation listicle pitchfork pickled fanny pack. Taxidermy church-key cred snackwave activated charcoal.
+  ## Installation Instructions:
 
+  ${data.installation}
 
+---
 
-  ## Questions
+  ## Usage:
 
-  ${data.questions}
+  ${data.usage}
 
+---
+
+  # Contributing
+
+  ${data.contribution}
+
+---
+
+  # Tests
+  ${data.test}
+
+---
+
+  # Contact Information
+    *GitHub Username: ${data.userName}
+    *GitHub Email: ${data.userEmail}
+  
   
 `;
 }
