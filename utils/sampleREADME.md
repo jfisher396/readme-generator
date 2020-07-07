@@ -2,16 +2,15 @@
   
   # Project Title:
 
-   Sample
+  sample
 
-  [![npm](https://badge.fury.io/js/inquirer.svg)](http://badge.fury.io/js/inquirer)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
- 
+---
 
   ## Description:
 
-  Sample
+  sample
 
   ---
 
@@ -25,15 +24,15 @@
 
 ---
 
-  ## Installation Instructions:
+  ## Installation:
 
-  Sample
+  sample
 
 ---
 
   ## Usage:
 
-  Sample
+  sample
 
 ---
 
@@ -46,16 +45,16 @@
 
   ## Contributing:
 
-  Sample
+  sample
 
 ---
 
   ## Tests:
-  Sample
+  sample
 
 ---
 
   ## Contact Information:
-    *GitHub Username: Sample
-    *GitHub Email: Sample@sample.com
+    *GitHub Username: sample
+    *GitHub Email: sample
   

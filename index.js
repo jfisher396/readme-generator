@@ -85,7 +85,7 @@ const questions = [{
 // function to write README file titles and content
 function writeToFile(fileName, data) {
     let readMeData = generateMarkdown(data);
-    fs.writeFile(fileName, readMeData, function (err) {
+    fs.writeFileSync(fileName, readMeData, function (err) {
 
         if (err) {
             return console.log(err);
