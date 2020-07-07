@@ -11,6 +11,9 @@
   ## Description:
 
   A command-line application that dynamically generates a professional README.md from a user's input.
+  
+  ![GitHub Logo](/utils/Screenshot%20(57).png)
+ 
 
   ---
 
