@@ -1,20 +1,17 @@
-// function to generate markdown for README
-function generateMarkdown(data) {
 
-  return `
   
   # Project Title:
 
-   ${data.title}
+   Sample
 
   [![npm](https://badge.fury.io/js/inquirer.svg)](http://badge.fury.io/js/inquirer)
-  ${data.licenseBadge}
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
  
 
   ## Description:
 
-  ${data.description}
+  Sample
 
   ---
 
@@ -30,18 +27,18 @@ function generateMarkdown(data) {
 
   ## Installation Instructions:
 
-  ${data.installation}
+  Sample
 
 ---
 
   ## Usage:
 
-  ${data.usage}
+  Sample
 
 ---
 
   ## License
-  License used for this project - ${data.license}
+  License used for this project - MIT
     * For more information on license types, please reference this website
   for additional licensing information - [https: //choosealicense.com/](https://choosealicense.com/).
 
@@ -49,20 +46,16 @@ function generateMarkdown(data) {
 
   ## Contributing:
 
-  ${data.contribution}
+  Sample
 
 ---
 
   ## Tests:
-  ${data.test}
+  Sample
 
 ---
 
   ## Contact Information:
-    *GitHub Username: ${data.userName}
-    *GitHub Email: ${data.userEmail}
+    *GitHub Username: Sample
+    *GitHub Email: Sample@sample.com
   
-`;
-}
-
-module.exports = generateMarkdown;
