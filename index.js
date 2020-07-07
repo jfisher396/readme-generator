@@ -4,9 +4,9 @@ const inquirer = require("inquirer");
 const fs = require('fs');
 // Variable to connect generateMarkdown function to application
 const generateMarkdown = require("./utils/generateMarkdown");
-const path = require('path')
 
-// This function will return specific badges based on license selection.
+
+// This function will determine badges based on license selection.
 function licenseBadge(value) {
     if (value === "GNU AGPLv3") {
         return "[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)";
@@ -95,7 +95,7 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
     inquirer.prompt(questions).then((data) => {
-        console.log(JSON.stringify(data, null, " "));
+        console.log(JSON.stringify(data, null, 2));
         data.licenseBadge = licenseBadge(data.license);
         writeToFile("README.md", data);
     });

@@ -11,7 +11,7 @@ function generateMarkdown(data) {
 
   ---
 
-  ## Table of Contents 
+  ## Table of Contents:
   *[Installation](#Installation) 
   *[Usage](#Usage)
   *[License](#License)
@@ -19,7 +19,6 @@ function generateMarkdown(data) {
   *[Tests](#Tests) 
   *[Questions](#Contact-Information)
 
-  
 ---
 
   ## Installation Instructions:
@@ -39,19 +38,20 @@ function generateMarkdown(data) {
     * For more information on license types, please reference this website
   for additional licensing information - [https: //choosealicense.com/](https://choosealicense.com/).
 
+---
 
-  ## Contributing
+  ## Contributing:
 
   ${data.contribution}
 
 ---
 
-  ## Tests
+  ## Tests:
   ${data.test}
 
 ---
 
-  ## Contact Information
+  ## Contact Information:
     *GitHub Username: ${data.userName}
     *GitHub Email: ${data.userEmail}
   
