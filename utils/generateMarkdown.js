@@ -5,12 +5,11 @@ function generateMarkdown(data) {
   
   # Project Title:
 
-   ${data.title}
+  ${data.title}
 
-  [![npm](https://badge.fury.io/js/inquirer.svg)](http://badge.fury.io/js/inquirer)
   ${data.licenseBadge}
   
- 
+---
 
   ## Description:
 
@@ -28,7 +27,7 @@ function generateMarkdown(data) {
 
 ---
 
-  ## Installation Instructions:
+  ## Installation:
 
   ${data.installation}
 
