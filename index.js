@@ -6,6 +6,7 @@ const fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown");
 const path = require('path')
 
+
 // array of questions for user
 const questions = [{
         type: "input",
@@ -17,7 +18,6 @@ const questions = [{
         message: "Please enter a brief description of your project:",
         name: "description",
     },
-
     {
         type: "input",
         message: "What are the installation instructions for your project?",
@@ -48,15 +48,9 @@ const questions = [{
         name: "userEmail",
         message: "What is your GitHub email?",
     },
-    // {
-    //     type: "input",
-    //     message: "Questions?",
-    //     name: "questions",
-    // },
+
 ]
-
-
-// function to write README file
+// function to write README file titles and content
 function writeToFile(fileName, data) {
     let readMeData = generateMarkdown(data);
     fs.writeFile(fileName, readMeData, function (err) {
@@ -64,24 +58,18 @@ function writeToFile(fileName, data) {
         if (err) {
             return console.log(err);
         }
-
-        console.log("Success!");
-
     });
 }
 // function to initialize program
 function init() {
-    inquirer.prompt(questions).then(function (answers) {
-        fs.writeFileSync(path.join(process.cwd(), "README.md"),
-            generateMarkdown({
-                ...answers
-            }),
-            err => err && console.log(err)
-        )
-        console.log({
-            ...answers
-        });
-    });
+inquirer.prompt(questions).then((data) => {
+    console.log(JSON.stringify(data, null, " "));
+    // data.licenseBadge = licenseBadge(data.license);
+    writeToFile("README.md", data);
+});
 }
+
 // function call to initialize program
 init();
+
+// End of line
