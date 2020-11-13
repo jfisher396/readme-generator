@@ -63,6 +63,8 @@ THEN I am taken to the corresponding section of the README
   ## Visuals:
 
   ![screenshot 1](images/readme-generator-1.png)
+  ![screenshot 2](images/readme-generator-2.png)
+  ![screenshot 2](images/readme-generator-3.png)
 
 ---
 
@@ -103,7 +105,7 @@ THEN I am taken to the corresponding section of the README
 ---
 
   ## Authors and Acknowledgments
-  James Fisher
+  Built by [James Fisher](https://jfisher396.github.io/james-fisher-web-developer/).
 
 ---
 
