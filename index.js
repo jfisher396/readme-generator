@@ -33,8 +33,13 @@ const questions = [{
     },
     {
         type: "input",
-        message: "Please enter a brief description of your project:",
+        message: "Please enter a one-sentence description of your project:",
         name: "description",
+    },
+    {
+        type: "input",
+        message: "Please tell us about your project:",
+        name: "about",
     },
     {
         type: "input",
@@ -43,8 +48,8 @@ const questions = [{
     },
     {
         type: "input",
-        message: "Please describe how we can use this program?",
-        name: "usage",
+        message: "What is the link to clone the repo?",
+        name: "clone",
     },
     {
         type: "list",
@@ -62,13 +67,13 @@ const questions = [{
     },
     {
         type: "input",
-        message: "How can someone contribute to your project?",
-        name: "contribution",
+        message: "Please enter any testing protocols you used for your project?",
+        name: "test",
     },
     {
         type: "input",
-        message: "Please enter any testing protocols you used for your project?",
-        name: "test",
+        name: "author",
+        message: "What is your name?",
     },
     {
         type: "input",
@@ -80,6 +85,17 @@ const questions = [{
         name: "userEmail",
         message: "What is your GitHub email?",
     },
+    {
+        type: "input",
+        name: "URL",
+        message: "What is the URL of the live site?",
+    },
+    {
+        type: "input",
+        name: "repo",
+        message: "What is the URL of the github repo?",
+    },
+
 
 ]
 // function to write README file titles and content
