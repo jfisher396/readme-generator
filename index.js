@@ -1,31 +1,24 @@
-// Inquirer variable to allow use of NPM Inquirer module
+// Variables containing required packages
 const inquirer = require("inquirer");
-// File service variable that allows for reading/writing of files
-const fs = require('fs');
-// Variable to connect generateMarkdown function to application
+const fs = require("fs");
+const util = require("util");
+// Variables to connect modules to application
 const generateMarkdown = require("./utils/generateMarkdown");
 const licenseBadge = require("./utils/licenseBadge").licenseBadge;
 const questions = require("./utils/questions").questions;
+//Allows for use of async await
+const writeFileAsync = util.promisify(fs.writeFile);
 
-
-
-// function to write README file titles and content
-function writeToFile(fileName, data) {
-    let readMeData = generateMarkdown(data);
-    fs.writeFileSync(fileName, readMeData, function (err) {
-
-        if (err) {
-            return console.log(err);
-        }
-    });
-}
-// function to initialize program
-function init() {
-    inquirer.prompt(questions).then((data) => {
-        console.log(JSON.stringify(data, null, 2));
-        data.licenseBadge = licenseBadge(data.license);
-        writeToFile("created-README.md", data);
-    });
+// function to initialize program and create README file
+async function init() {
+  try {
+    const answers = await inquirer.prompt(questions);
+    answers.licenseBadge = licenseBadge(answers.license);
+    let readMeData = generateMarkdown(answers);
+    await writeFileAsync("created-README.md", readMeData);
+  } catch (err) {
+    throw err;
+  }
 }
 
 // function call to initialize program
