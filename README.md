@@ -1,6 +1,6 @@
 
   
-  # README Generator
+# README Generator
 
   A command-line application that dynamically generates a professional README.md from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer).
 
@@ -8,7 +8,7 @@
 
   
 ---
-  ## Contents
+## Contents
 
   1. [About](#about)
       1. [User Story](#user%20story)
@@ -18,11 +18,11 @@
   2. [Installation](#installation)
   3. [License](#license)
   4. [Contributing](#contributing)
-  5. [Tests](#tests)
-  6. [Authors and acknowledgment](#authors%20and%20acknowledgment)
+  5. [Authors and acknowledgment](#authors%20and%20acknowledgment)
+  6. [Contact](#contact)
 
 ---
-  ## About
+## About
 
   When creating an open source project on GitHub, it is important to have a quality README with information about the app--what is the app for, how to use the app, how to install it, how to report issues, and how to make contributions so that other developers are more likely to use and contribute to the success of the project. A command-line application will allow for quick and easy generation of a project README to get started quickly. This will allow a project creator to spend more time working on finishing the project and less time creating a good README.
 
@@ -60,31 +60,35 @@ THEN I am taken to the corresponding section of the README
 ```
   
 ---
-  ## Visuals:
+## Visuals:
 
-  ![screenshot 1](images/readme-generator-1.png)
-  ![screenshot 2](images/readme-generator-2.png)
-  ![screenshot 2](images/readme-generator-3.png)
+![screenshot 1](images/readme-generator-1.png)
+![screenshot 2](images/readme-generator-2.png)
+![screenshot 2](images/readme-generator-3.png)
 
 ---
 
-  ## Installation:
+## Installation:
   
 
-  To clone the repo:
+To clone the repo:
   
-      git clone git@github.com:jfisher396/readme-generator.git
+  git clone 
+  
+  ```
+  git@github.com:jfisher396/readme-generator.git
+  ```
   
 ---
 
-  ## License
+## License
   License used for this project - MIT
   * For more information on license types, please reference this website
   for additional licensing information - [https: //choosealicense.com/](https://choosealicense.com/).
 
 ---
 
-  ## Contributing:
+## Contributing:
   
   To contribute to this application, create a pull request.
   Here are the steps needed for doing that:
@@ -99,17 +103,12 @@ THEN I am taken to the corresponding section of the README
 
 ---
 
-  ## Tests:
-  None
-
----
-
   ## Authors and Acknowledgments
   Built by [James Fisher](https://jfisher396.github.io/james-fisher-web-developer/).
 
 ---
 
-  ### Contact Information:
-    *GitHub Username: jfisher396
-    *GitHub Email: jfisher396@hotmail.com
+  ## Contact Information:
+  * GitHub Username: [jfisher396](https://github.com/jfisher396)
+  * GitHub Email: james@james-fisher-web-developer.com
   
