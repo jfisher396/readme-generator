@@ -57,7 +57,7 @@ const questions = [
   {
     type: "input",
     name: "userEmail",
-    message: "What is your GitHub email?",
+    message: "What is your email?",
   },
   {
     type: "input",
@@ -72,5 +72,5 @@ const questions = [
 ];
 
 module.exports = {
-  questions:questions,
+  questions: questions,
 };
